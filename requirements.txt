@@ -1,0 +1,19 @@
+# ---------------------------------------------------------------------------
+# requirements.txt  (manifest file)
+# ---------------------------------------------------------------------------
+# This manifest lists every Python package required to run the fraud
+# detection program. Install them all with the command:
+#
+#     pip install -r requirements.txt
+#
+# The version numbers below were used to build and test the project. You may
+# use newer versions, but these are known to work together.
+# ---------------------------------------------------------------------------
+
+pyod==3.6.2            # Outlier detection library that provides the AutoEncoder
+torch==2.13.0          # Deep learning backend used by the PyOD AutoEncoder
+numpy>=1.24            # Numerical arrays and mathematical operations
+pandas>=2.0            # Reading the CSV dataset and handling tabular data
+scikit-learn>=1.3      # Train/test split, scaling, and evaluation metrics
+matplotlib>=3.7        # Plotting the reconstruction error histogram
+tqdm>=4.65             # Progress bar shown while the model trains
